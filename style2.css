@@ -35,7 +35,10 @@
 .contact {
   background-color: #f8fafc;
   padding: 35px;
-  height: 140vh;
+  height: 150vh;
+  width: 100%;
+  margin-top: 60px;
+  text-align: center;
 }
 
 .contact-form-sec {
@@ -92,7 +95,6 @@
   background-color: #222050;
 }
 .foot-content {
-  position: absolute;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -116,7 +118,7 @@
   font-size: 0.8rem;
   height: 50px;
   position: relative;
-  top: 380px;
+  top: 64px;
   border-top: thin solid #006f9b;
   padding-top: 20px;
   background-color: #333;
@@ -132,8 +134,52 @@
   color: #fff;
   font-size: 1.2rem;
 }
-@media only screen and (max-width: 600px) {
-  .copyright {
-    content: inherit;
+@media screen and (min-width: 300px) and (max-width: 620px) {
+  body {
+    font-size: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
   }
+  .about {
+    height: 140vh;
+  }
+  .projects-content {
+    height: 125vh;
+  }
+  .contact {
+    height: 150vh;
+  }
+}
+@media screen and (min-width: 620px) and (max-width: 1043px) {
+  body {
+    font-size: 0.6rem;
+    display: grid;
+    max-zoom: 100%;
+  }
+  .about {
+    height: 140vh;
+  }
+  .projects-content {
+    height: 125vh;
+  }
+  .contact {
+    height: 150vh;
+  }
+}
+@media screen and (min-width: 1043px) and (max-width: 1128px) {
+  body {
+    display: grid;
+    max-zoom: 100%;
+  }
+  .about {
+    height: 140vh;
+  }
+  .projects-content {
+    height: 125vh;
+  }
+  .contact {
+    height: 150vh;
+  }
+}
+@media screen and (min-width: 1128px) {
 }
